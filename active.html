@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration - Activate Your Email</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #868686;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 16px !important;
+        }
+
+        .container {
+            max-width: 975px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        .email-header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .email-header img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .email-header h4 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 24px;
+        }
+
+        .email-content {
+            width: 100%;
+        }
+
+        .email-content p {
+            margin: 0 0 10px;
+        }
+
+        .email-content a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f6db20;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .email-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .email-footer p {
+            margin: 5px 0;
+            font-size: 12px;
+            color: #868686;
+        }
+
+        .email-footer a {
+            color: #868686;
+            text-decoration: none;
+        }
+
+        .email-footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .email-content td {
+                display: block;
+                width: 100% !important;
+            }
+
+            .email-image {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="email-header">
+            <img src="https://admin.thisheart.co/images/this-heart-logo.png" alt="ThisHeart">
+            <h4>Verify your email</h4>
+        </header>
+        <table class="email-content" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td width="60%" valign="top">
+                    <p>Hi {{ Crypt::decryptString($name) }},</p>
+                    <p>Welcome to ThisHeart! You're just one step away from completing your account setup. For your
+                        security, please verify your email address.</p>
+                    <br>
+                    <a href="{{ $login_url }}" class="btn">Click here
+                        <img style="display: inline; margin-left: 5px;"
+                            src="https://admin.thisheart.co/images/arrow-right-top.png" alt="Arrow Right">
+                    </a>
+                    <br><br>
+                    <h4>Or copy this URL into your browser:</h4>
+                    <p>{{ $login_url }}</p>
+                    <br>
+                    <h4 style="margin-bottom: 0px;">Thanks,</h4>
+                    <h4 style="margin-top: 0px;">ThisHeart Team</h4>
+                </td>
+                <td width="40%" align="right" valign="top" class="email-image">
+                    <img src="active.png" alt="Side Image"
+                        style="max-width: 100%; height: auto;">
+                </td>
+            </tr>
+        </table>
+        <div class="email-footer">
+            <p>This email was sent from a notification-only address. Please do not reply.</p>
+            <p><a href="https://thisheart.co/termscondition">Terms of use</a> | <a
+                    href="https://thisheart.co/privacypolicy">Privacy Policy</a></p>
+            <h5 style="margin-top: 0px;">ThisHeart</h5>
+        </div>
+    </div>
+</body>
+
+</html>

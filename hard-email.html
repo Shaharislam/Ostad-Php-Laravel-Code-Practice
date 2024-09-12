@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add New Beneficiary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .body {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            height: 300px;
+            /* Adjust as needed */
+        }
+
+        .body div {
+            /* width: 48%; */
+            /* Adjust width for spacing */
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .body p {
+            margin: 0 0 10px;
+        }
+
+        a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            padding-top: 20px;
+            margin-top: 150px;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px dashed #ccc;
+            margin: 20px 0;
+        }
+
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bg-primary {
+            background-color: #6a1b9a;
+            color: #fff;
+        }
+
+        .header-content {
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 767px) {
+            .display-image {
+                display: none;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .body {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .body div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .body p {
+                font-size: 14px;
+            }
+
+            .header-content {
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            .container {
+                padding: 15px;
+            }
+
+            .body p {
+                font-size: 16px;
+            }
+
+            .header-content {
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="header-content">
+            <img src="https://thisheart.co/images/this-heart-logo.png"
+                style="vertical-align: middle; max-width: 45px; height: auto; border-width: 0; margin: 0 auto;"
+                alt="ThisHeart">
+            <h2>You’ve been made a beneficiary</h2>
+        </header>
+
+        <div class="body">
+            <div style="padding: 10px; margin: 10px">
+                <p>Hi {{ $b_first_name }},</p>
+                <p><b>{{ $user_first_name }}</b> just made you a beneficiary of their ThisHeart account.</p>
+                <p style="margin-top: 5px;">To access the account, simply click here and use your unique access code:
+                </p>
+                <p style="font-size: 30px; font-weight: bold; color: #717071; margin-top: 12px; margin-bottom: 12px;">
+                    {{ $beneficiary_code }}
+                </p>
+                <p>
+                    To access the account, <a href="{{ $url }}" class="font-weight-bold text-primary">Go Access Code
+                        Page</a>
+                </p><br>
+                <p>ThisHeart is an application that helps people leave behind the things that matter most to the
+                    people who matter most.</p>
+                <p style="margin-top: 5px;">See what {{ $user_first_name }} left behind for you by clicking here.</p>
+                <br>
+                <p>Thanks,</p>
+                <p>The ThisHeart Team</p>
+            </div>
+            <div class="illustration text-center display-image" style="height: 250px;">
+                <img src="https://thisheart.co/images/add-email.png" alt="Add Email">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>This email was sent from a notification-only address. Please do not reply.</p>
+            <p><a href="https://thisheart.co/termscondition">Terms of use</a> | <a
+                    href="https://thisheart.co/privacypolicy">Privacy Policy</a></p>
+            <p>ThisHeart</p>
+        </div>
+    </div>
+</body>
+
+</html>

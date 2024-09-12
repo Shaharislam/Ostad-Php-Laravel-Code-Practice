@@ -1,0 +1,220 @@
+<html data-bs-theme = "dark" >
+<!--  Whole theme Dark / Light Process depends on data-bs-theme = "dark/light" -->
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+</head>
+
+<body>
+    <div class="Container-Fluid d-flex" data-bs-theme = "light">
+       <div class="col-6">
+         <form>
+            <label class="form-label">Form-control</label>
+            <input type="email" class="form-control" /> </br>
+            <label class="form-label">Required Email</label>
+            <input type="email" placeholder="required form-control-lg" class="form-control" required/> </br>
+            <label class="form-label">Disabled Email</label>
+            <input type="email" placeholder="disabled form-control-sm" class="form-control" disabled/> </br>
+            <input type="email" placeholder="readonly" class="form-control" readonly/> </br>
+            <input type="email" class="form-control" /> </br>
+            <input type="email" class="form-control" /> </br>
+            <input type="file" class="form-control" /> </br>
+            <label class="form-label">Text Area</label>
+            <textarea class="form-control" rows="5"></textarea> </br>
+         </form>
+       </div>
+        <div class="col-6">
+            <form>
+                <label class="form-label">Form Select Default</label>
+                <select class="form-select">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4" selected>Option 4</option>
+                </select>
+                <label class="form-label">Form Select lg</label>
+                <select class="form-select form-select-lg">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3" selected>Option 3</option>
+                    <option value="4">Option 4</option>
+                </select> 
+                <label class="form-label">Form Select sm</label>
+                <select class="form-select form-select-sm">
+                    <option value="1">Option 1</option>
+                    <option value="2" selected>Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="4">Option 4</option>
+                </select> 
+            </form>
+
+            <form>
+                <label class="form-label">Form Check Input</label>
+                 <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">Fish</label>
+                 </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">Chicken</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <label class="form-check-label">Meat</label>
+                </div>
+            </form>
+            <form>
+                <label class="form-label">Form Check Input</label>
+                <div class="form-check">
+                    <input class="folm-check-input" name="gender" type="radio" value="">
+                    <label class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input class="folm-check-input" name="gender" type="radio" value="">
+                    <label class="form-check-label">Female</label>
+                </div>
+                <div class="form-check">
+                    <input class="folm-check-input" name="gender" type="radio" value="">
+                    <label class="form-check-label">Common</label>
+                </div>
+            </form>
+            <form>
+                <label class="form-label">Form Range Check</label>
+                <input type="range" class="form-range" min="0" max="100" step="2" value="10">
+                <label class="form-label">Form Range disable</label>
+                <input type="range" class="form-range" min="0" max="100" step="2" value="50" disabled>
+            </form>
+        </div>
+    </div>
+    <div class="Container-Fluid">
+        <div class="row">
+            <div class="col-6 col-lg-6">
+                <div class="alert alert-primary">My Bootstrap Alert Primary</div>
+                <div class="alert alert-success">My Bootstrap Alert Success</div>
+                <div class="alert alert-warning">My Bootstrap Alert Warning</div>
+                <div class="alert alert-danger">My Bootstrap Alert Danger</div>
+                <div class="alert alert-light">My Bootstrap Alert Light</div>
+                <div class="alert alert-dark">My Bootstrap Alert Dark</div>
+                <div class="alert alert-info">My Bootstrap Alert Info</div>
+            </div>
+            <div class="col-6 col-lg-6">
+                <label class="form-label">Button lg</label></br>
+                <button class="btn btn-primary btn-lg">Submit</button></br>
+                <label class="form-label">Button sm</label></br>
+                <button class="btn btn-success btn-sm">Submit</button></br>
+                <label class="form-label">Button w-50</label></br>
+                <button class="btn btn-warning w-50">Submit</button></br>
+                <label class="form-label">Button w-100</label></br>
+                <button class="btn btn-danger w-100">Submit Danger</button></br>
+                <label class="form-label">Button outline</label></br>
+                <button class="btn btn-outline-info">Submit</button></br>
+                <label class="form-label">Button outline </label></br>
+                <button class="btn btn-outline-warning">Submit</button></br>
+                <label class="form-label">Button outline</label></br>
+                <button class="btn btn-outline-light">Submit</button></br>
+            </div>
+        </div>
+    </div>
+        <div class="Container-Fluid">
+            <div class="row">
+                <div class="col-6 col-lg-6">
+                    <label class="form-label">Button Group</label></br>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-success">Submit</button>
+                        <button type="button" class="btn btn-warning">Submit</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="Container-Fluid bg-success">
+          <div class="row">
+               <div class="col-6 p-5">
+                   <div class="card w-50">
+                      <img src=" https://placehold.co/600x400?text=Hello\nWorld"/>
+                      <div class="card-body">
+                         <h5 class="card-title">Card Title</h5>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div> 
+                   </div>
+               </div>
+            <div class="col-6 p-5">
+                <div class="dropdown">
+                     <button class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown"> Submit</button>
+                     <ul class="dropdown-menu">
+                            <li class="dropdown-item"> Bangladesh</li>
+                            <li class="dropdown-item"> Rendia</li>
+                            <li class="dropdown-item"> US</li>
+                            <li class="dropdown-item"> UK</li>
+                            <li class="dropdown-item"> Canada</li>
+                            <li class="dropdown-item"> Australia</li>
+                            <li class="dropdown-item"> Japan</li>
+                     </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="Container-Fluid bg-info">
+            <div class="row">
+                <div class="col-6 p-5">
+                    <label class="form-label">Progress Bar</label>
+                    <div class="progress">
+                        <div class="progress-bar w-75">75% Progress
+                        </div>
+                    </div>        
+                </div>
+                <div class="col-6 p-5">
+                    <label class="form-label">Progress Bar</label>
+                    <div class="progress" style="height: 30px;">
+                        <div class="progress-bar" style="width: 89%;">
+                            Progress 89%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Container-Fluid bg-danger">
+            <div class="row">
+                <div class="col-6 p-5">
+                    <label class="form-label">Spinner Borader</label>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    
+                </div>
+                <div class="col-6 p-5">
+                    <label class="form-label">Spinner Grow</label>
+                    <div class="spinner-border text-secondery" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Container-Fluid bg-warning">
+            <div class="row">
+                <div class="col-6 p-5">
+                    <label class="form-label">List Group</label>
+                    <ul class="list-group">
+                        <li class="list-group-item">Bangladesh</li>
+                        <li class="list-group-item">Rendia</li>
+                        <li class="list-group-item">US</li>
+                        <li class="list-group-item">UK</li>
+                    </ul>
+                </div>
+                <div class="col-6 p-5">
+                    <label class="form-label">List Group Flush</label>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Bangladesh</li>
+                        <li class="list-group-item">Rendia</li>
+                        <li class="list-group-item">US</li>
+                        <li class="list-group-item">UK</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <script src="JS/bootstrap.bundle.js"></script>
+</body>
+
+</html>
