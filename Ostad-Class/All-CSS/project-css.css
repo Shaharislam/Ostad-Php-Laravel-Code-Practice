@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.menu{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap:20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+p.action{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 20px;
+    color: #035310;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #34ed52;
+    margin-left: 20px;
+    padding-left: 20px;
+    
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+}
+.left h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+}
+.left p{
+    margin-top: 40px;
+    font-size: 18px;
+    color: #555555;
+}
+.copy-right{
+    align-self: flex-start;
+    padding-top: 40px;
+}
+.left button{    
+    width: 100px;                                                                                                                                                                                                           
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(247, 86, 86);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+}                                                                                                                                                                                                                                                   
+.right{
+    background-color: goldenrod;
+    width: 50%;
+    
+}
+span.green{
+    color: #05971d;
+}
+.right{
+    background-image: url('../background-image.png');
+    background-size: cover;
+    background-position: center;
+}
