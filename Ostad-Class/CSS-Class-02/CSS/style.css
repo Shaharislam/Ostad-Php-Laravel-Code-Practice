@@ -1,0 +1,167 @@
+:root{
+    --bg-color: rgb(118, 244, 244);/* variable  */
+    --f-size:18px;
+    --w-space: 1px;
+    --t-decoration:underline;
+}
+body{
+    background-color: var(--bg-color); /*  call the variable  */
+    font-family: "Protest Guerrilla",sans-serif;
+}
+.text-style-with-variable{
+    font-size: var(--f-size); /*  call the variable  */
+    color: rgb(216, 11, 227);
+    font-weight: bold;
+    letter-spacing: var(--w-space) ; /*  call the variable  */
+    text-decoration: var(--t-decoration); /*  call the variable  */
+}
+.my-div{
+    display: flex;
+    background-color: rgb(236, 142, 142);
+    overflow: scroll;
+}
+.my-div1 {
+    height: 350px;
+    width: 30%;
+    background-color: rgb(105, 238, 130);
+    overflow: hidden;
+    padding: 10px;
+    line-height: 20px;
+}
+.my-div2 {
+    height: 350px;
+    width: 30%;
+    background-color: rgb(101, 110, 236);
+    overflow: scroll;
+    padding: 10px;
+}
+.my-div3 {
+    height: 350px;
+    width: 30%;
+    background-color: rgb(241, 201, 23);
+    overflow:visible;
+    padding: 10px;
+}
+.box-div{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(236, 142, 142);
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.box{
+    display: flex;
+    height: 40px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(184, 142, 236);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.box-style{
+    display: flex;
+    background-color: seagreen;
+    height: 300px;
+    width: 400px;
+    border: 5px solid rgb(205, 9, 9);
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.item{
+    display: flex;
+    background-color: red;
+    height: 30px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+.div-style{
+    display: flex;
+}
+.board{
+    width: 80%;
+    height: 400px;
+    background-color: rgb(233, 210, 108);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+}
+
+.notice-sticky{
+    display: flex;
+    background-color: rgb(241, 201, 23);
+    position: sticky;
+    border: 1px solid rgb(0, 0, 0);
+    top:0;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Static Positioning (default) */
+.static {
+    background-color: #d3d3d3;
+}
+
+/* Relative Positioning */
+.relative {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: #ffa07a;
+}
+
+/* Absolute Positioning */
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #98fb98;
+}
+
+/* Fixed Positioning */
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #add8e6;
+}
+
+/* Sticky Positioning */
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #ffcccb;
+    border: 2px solid red;
+}
+
+/* Content to create space for scrolling */
+.content {
+    height: 400px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    margin: 10px;
+}
