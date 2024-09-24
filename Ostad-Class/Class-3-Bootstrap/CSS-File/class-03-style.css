@@ -1,0 +1,26 @@
+.body-style{
+    /* background-color: rgb(82, 98, 157); */
+    font-family: "Protest Guerrilla",sans-serif;
+}
+
+.text-color{
+      color:black;
+}
+.button-text-color {
+    color: white;
+}
+.speace-between{
+    margin-top: 80px !important;
+    margin-bottom: 80px !important;
+}
+.submit-button{
+    background-color: rgb(94, 114, 228);
+    color: white;
+}
+.nav-logo{
+    width: 140px;
+}
+.no-link-color {
+    text-decoration: none;
+    color: inherit;
+}
